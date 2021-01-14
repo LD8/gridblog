@@ -6,5 +6,11 @@
 
 module.exports = {
   siteName: 'GridBlog',
-  plugins: []
+  plugins: [],
+  // templates: {
+  //   Repo: [{
+  //     path: '/repos',
+  //     component: './src/templates/Repos.vue'
+  //   }]
+  // }
 }
