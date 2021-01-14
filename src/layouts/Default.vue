@@ -6,7 +6,7 @@
       </strong>
       <nav class="nav">
         <g-link class="nav__link" to="/">News</g-link>
-        <g-link class="nav__link" to="/github/">GitHub</g-link>
+        <g-link class="nav__link" to="/repos/">Repos</g-link>
         <g-link class="nav__link" to="/blog/">Blog</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
       </nav>
