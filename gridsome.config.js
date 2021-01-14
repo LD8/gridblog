@@ -7,10 +7,12 @@
 module.exports = {
   siteName: 'GridBlog',
   plugins: [],
-  // templates: {
-  //   Repo: [{
-  //     path: '/repos',
-  //     component: './src/templates/Repos.vue'
-  //   }]
-  // }
+  templates: {
+    Repo: [
+      {
+        path: '/repos/:id',
+        component: './src/templates/Repo.vue',
+      },
+    ],
+  },
 }

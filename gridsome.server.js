@@ -6,13 +6,15 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const repoApis = require('./src/api/repo.js')
+// const axios = require('axios')
 
-module.exports = function (api) {
+module.exports = function(api) {
   api.loadSource(async ({ addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
     const collectionRepos = addCollection('Repo')
     const { data } = await repoApis.getRepoList()
-
+    // const { data } = await axios.get('https://api.github.com/users/ld8/repos')
+    // console.log('axios data!!! ', data)
     for (const d of data) {
       collectionRepos.addNode({
         id: d.id,

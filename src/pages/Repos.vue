@@ -4,9 +4,10 @@
       <h1>Repositories</h1>
       <ul>
         <li v-for="(r, i) in $page.repos.edges" :key="i">
-          <g-link to="/"
-            ><span>{{ r.node.name }}</span></g-link
-          >
+          <g-link :to="{ path: '/repos/', params: { id: r.node.id } }">
+          <!-- <g-link to="/"> -->
+            <span>{{ r.node.name }}</span>
+          </g-link>
           <p>{{ r.node.description }}</p>
           <p>
             <span>Created: {{ r.node.createdAt.slice(0, 10) }}</span>
