@@ -3,15 +3,18 @@
     <div>
       <h1>Repositories</h1>
       <ul>
-        <li v-for="(r, i) in $page.repos.edges" :key="i">
-          <g-link :to="r.node.path">
-            <span>{{ r.node.name }}</span>
-          </g-link>
-          <p>{{ r.node.description }}</p>
-          <p>
-            <span>Created: {{ r.node.createdAt.slice(0, 10) }}</span>
-          </p>
-        </li>
+        <g-link v-for="(r, i) in $page.repos.edges" :key="i" :to="r.node.path">
+          <li>
+            <h4>
+              <span>{{ r.node.name }}</span>
+            </h4>
+
+            <p>{{ r.node.description }}</p>
+            <p>
+              <span>Created: {{ r.node.createdAt.slice(0, 10) }}</span>
+            </p>
+          </li>
+        </g-link>
       </ul>
     </div>
   </Layout>
