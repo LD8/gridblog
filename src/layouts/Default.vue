@@ -9,7 +9,7 @@
         <!-- gridsome link 必须在url最后加上斜杠因为 -->
         <!-- Because the HTML file for the page is a index.html file in a directory. Paths generated for nodes already include a trailing slash -->
         <g-link class="nav__link" to="/repos/">Repos</g-link>
-        <g-link class="nav__link" to="/blog/">Blog</g-link>
+        <g-link class="nav__link" to="/blogs/">Blog</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
       </nav>
     </header>
@@ -50,5 +50,39 @@ body {
 
 .nav__link {
   margin-left: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  color: rgb(50, 50, 50);
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+li {
+  position: relative;
+  list-style: none;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 0 8px rgb(215, 215, 215);
+  border-radius: 3px;
+  margin: 10px;
+  padding: 10px 15px;
+  min-height: 100px;
+  min-width: 200px;
+  transition: 0.3s all ease-in-out;
+}
+li:hover {
+  transform: scale(1.05);
+}
+p span {
+  font-size: 12px;
+}
+button {
+  margin: 20px 0;
 }
 </style>
