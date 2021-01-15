@@ -1,7 +1,19 @@
 <template>
   <Layout>
     <div>
-      <h1>{{ $page.repo.name }}</h1>
+      <h1>{{ repo.name }}</h1>
+      <div>
+        <h3>{{ repo.description }}</h3>
+        <p>
+          <span>Created: {{ repo.createdAt }}</span><br>
+          <span>Latest Push: {{ repo.pushedAt }}</span><br>
+          <span>Watchers: {{ repo.watchers }}</span>
+        </p>
+      </div>
+      <div>
+        <a :href="repo.apiUrl">Visit Repo</a>
+      </div>
+      <button @click="$router.back()">Go Back</button>
     </div>
   </Layout>
 </template>
@@ -25,13 +37,13 @@ export default {
   name: "Repo",
   metaInfo() {
     return {
-      title: this.$page.repo.name,
+      title: this.repo.name,
     };
   },
   computed: {
-    // repo() {
-    //   return this.$page.repo;
-    // },
+    repo() {
+      return this.$page.repo;
+    },
   },
 };
 </script>

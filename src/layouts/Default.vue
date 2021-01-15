@@ -6,6 +6,8 @@
       </strong>
       <nav class="nav">
         <g-link class="nav__link" to="/">News</g-link>
+        <!-- gridsome link 必须在url最后加上斜杠因为 -->
+        <!-- Because the HTML file for the page is a index.html file in a directory. Paths generated for nodes already include a trailing slash -->
         <g-link class="nav__link" to="/repos/">Repos</g-link>
         <g-link class="nav__link" to="/blog/">Blog</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>

@@ -4,8 +4,7 @@
       <h1>Repositories</h1>
       <ul>
         <li v-for="(r, i) in $page.repos.edges" :key="i">
-          <g-link :to="{ path: '/repos/', params: { id: r.node.id } }">
-          <!-- <g-link to="/"> -->
+          <g-link :to="r.node.path">
             <span>{{ r.node.name }}</span>
           </g-link>
           <p>{{ r.node.description }}</p>
@@ -25,6 +24,7 @@ query {
       node {
         id
         name
+        path
         address
         description
         apiUrl
@@ -50,6 +50,11 @@ export default {
 * {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3 {
+  color: rgb(50, 50, 50);
+}
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -71,6 +76,9 @@ li:hover {
   transform: scale(1.05);
 }
 p span {
-  font-size: 10px;
+  font-size: 12px;
+}
+button {
+  margin: 20px 0;
 }
 </style>
