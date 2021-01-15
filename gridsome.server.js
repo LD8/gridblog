@@ -7,7 +7,6 @@
 
 const repoApis = require('./src/api/repo.js')
 const blogApis = require('./src/api/blog.js')
-const { default: axios } = require('axios')
 // const axios = require('axios')
 
 module.exports = function (api) {
@@ -30,19 +29,25 @@ module.exports = function (api) {
       })
     }
 
+    function getObjsFirstKey(fileObj) {
+      return Object.keys(fileObj)[0]
+    }
+
     const collectionBlog = addCollection('Blog')
     const { data: blogData } = await blogApis.getBlogList()
     for (const b of blogData) {
-      const { files, created_at, description, html_url } = b
-      const fileKey = Object.keys(files)[0]
+      const { id, files, created_at, description, html_url } = b
       // const { raw_url } = files[fileKey]
-      // const { data } = await axios.get(raw_url)
+      const {
+        data: { files: contentFile },
+      } = await blogApis.getBlog(id)
       collectionBlog.addNode({
-        title: fileKey,
+        id,
+        title: getObjsFirstKey(files),
         createdAt: created_at,
         description,
-        // content: data,
-        address: html_url
+        content: contentFile[getObjsFirstKey(contentFile)].content,
+        address: html_url,
       })
     }
   })

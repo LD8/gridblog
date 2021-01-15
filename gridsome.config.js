@@ -8,14 +8,14 @@ module.exports = {
   siteName: 'GridBlog',
   plugins: [],
   templates: {
-    // Repo: '/repos/:id',
+    Repo: '/repos/:id',
     // is the same as following:
-    Repo: [
-      {
-        path: '/repo/:id',
-        component: './src/templates/Repo.vue',
-      },
-    ],
+    // Repo: [
+    //   {
+    //     path: '/repo/:id',
+    //     component: './src/templates/Repo.vue',
+    //   },
+    // ],
     Blog: '/blog/:id'
   },
 }

@@ -2,6 +2,7 @@
   <Layout>
     <div>
       <h1>{{ blog.title }}</h1>
+      <div v-html="mdToHtml(blog.content)"></div>
       <button @click="$router.back()">Go Back</button>
     </div>
   </Layout>
@@ -14,11 +15,15 @@ query ($id: ID!) {
     createdAt
     description
     address
+    content
   }
 }
 </page-query>
 
 <script>
+import MarkdownIt from "markdown-it";
+const md = new MarkdownIt();
+
 export default {
   name: "Blog",
   // this must be a function in order to access the query result
@@ -30,6 +35,11 @@ export default {
   computed: {
     blog() {
       return this.$page.blog;
+    },
+  },
+  methods: {
+    mdToHtml(mdContent) {
+      return md.render(mdContent);
     },
   },
 };
