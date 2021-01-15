@@ -43,7 +43,7 @@ const md = new MarkdownIt();
 
 export default {
   metaInfo: {
-    title: "News",
+    title: "Home",
   },
   data() {
     return {

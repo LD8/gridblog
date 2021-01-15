@@ -60,12 +60,34 @@ h2,
 h3 {
   color: rgb(50, 50, 50);
 }
+h4 {
+  margin: 10px 0;
+  font-size: 20px;
+}
 a {
   text-decoration: none;
-  color: rgb(55, 55, 55)
+  color: rgb(55, 55, 55);
+}
+a:hover {
+  color: rgb(36, 162, 36);
 }
 a:visited {
   color: green;
+}
+button {
+  margin: 30px 0;
+  padding: 10px 20px;
+  color: rgb(63, 63, 63);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px grey;
+  transition: 0.2s all ease-in-out;
+}
+button:hover {
+  color: white;
+  cursor: pointer;
+  background-color: green;
+  box-shadow: 0 0 2px grey;
 }
 ul {
   display: flex;
