@@ -18,4 +18,7 @@ module.exports = {
     // ],
     Blog: '/blog/:id'
   },
+  // github pages settings
+  siteUrl: 'https://ld8.github.io',
+  pathPrefix: '/gridblog'
 }
