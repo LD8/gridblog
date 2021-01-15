@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head>
+    <title>gist_markdown_examples.md - GridBlog</title><meta name="gridsome:hash" content="ef5a31b6d4f2ef30b559c2fd01d93591a31d3391"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.23"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/gridblog/assets/static/favicon.ce0531f.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/gridblog/assets/static/favicon.ac8d93a.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="96x96" href="/gridblog/assets/static/favicon.b9532cc.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/gridblog/assets/static/favicon.f22e9f3.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/gridblog/assets/static/favicon.62d22cb.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/gridblog/assets/static/favicon.1539b60.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/gridblog/assets/static/favicon.dc0cdc5.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/gridblog/assets/static/favicon.7b22250.9bb7ffafafc09ac851d81afb65b8ef59.png"><link rel="preload" href="/gridblog/assets/css/0.styles.298cab45.css" as="style"><link rel="preload" href="/gridblog/assets/js/app.883dac62.js" as="script"><link rel="preload" href="/gridblog/assets/js/page--src--templates--blog-vue.9cd07c6b.js" as="script"><link rel="prefetch" href="/gridblog/assets/js/page--node-modules--gridsome-0-7-23-gridsome--app--pages--404-vue.ef77c877.js"><link rel="prefetch" href="/gridblog/assets/js/page--src--pages--about-vue.6d4736fa.js"><link rel="prefetch" href="/gridblog/assets/js/page--src--pages--blogs-vue.5707b741.js"><link rel="prefetch" href="/gridblog/assets/js/page--src--pages--index-vue.340646fc.js"><link rel="prefetch" href="/gridblog/assets/js/page--src--pages--repos-vue.6198e4f7.js"><link rel="prefetch" href="/gridblog/assets/js/page--src--templates--repo-vue.4d44b054.js"><link rel="prefetch" href="/gridblog/assets/js/vendors~page--src--pages--index-vue~page--src--templates--blog-vue.a5781449.js"><link rel="stylesheet" href="/gridblog/assets/css/0.styles.298cab45.css"><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript>
+  </head>
+  <body >
+    <div data-server-rendered="true" id="app" class="layout"><header class="header"><strong><a href="/gridblog/" class="active">GridBlog</a></strong><nav class="nav"><a href="/gridblog/" class="nav__link active">Home</a><a href="/gridblog/repos/" class="nav__link">Repos</a><a href="/gridblog/blogs/" class="nav__link">Blog</a><a href="/gridblog/about/" class="nav__link">About</a></nav></header><div><h1>gist_markdown_examples.md</h1><div><h1>Gist markdown examples</h1>
+<p>A collection of Markdown code and tricks that were tested to work in Gist.</p>
+<p>This and all public gists in https://gist.github.com/ww9 are <a href="https://en.wikipedia.org/wiki/Public_domain_equivalent_license">Public Domain</a>. Do whatever you want with it including , no need to credit me.</p>
+<h3>Todo</h3>
+<ul>
+<li>Reformat this whole document and assimilate these:
+<ul>
+<li>https://gist.github.com/jonschlinkert/5854601</li>
+<li>https://gist.github.com/ringmatthew/9f7bbfd102003963f9be7dbcf7d40e51</li>
+<li>https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d</li>
+<li>https://gist.github.com/haydenk/958b433ee107537bb166b98b59262b2a</li>
+<li>https://gist.github.com/asabaylus/3071099</li>
+<li>https://gist.github.com/t-nissie/9580883 (Add images, secret gists, anti-spam protection)</li>
+<li>https://guides.github.com/features/mastering-markdown/</li>
+<li>https://gist.github.com/cyhsutw/d5983d166fb70ff651f027b2aa56ee4e#file-mathjax-ipynb (Python notebook, Math syntax)</li>
+</ul>
+</li>
+</ul>
+<h5>Table of Contents</h5>
+<p><a href="#headers">Headers</a>
+<a href="#emphasis">Emphasis</a>
+<a href="#lists">Lists</a>
+<a href="#links">Links</a>
+<a href="#images">Images</a>
+<a href="#code">Code and Syntax Highlighting</a>
+<a href="#tables">Tables</a>
+<a href="#blockquotes">Blockquotes</a>
+<a href="#html">Inline HTML</a>
+<a href="#hr">Horizontal Rule</a>
+<a href="#lines">Line Breaks</a>
+<a href="#videos">YouTube Videos</a>
+<a href="#tex">TeX Mathematical Formulae</a></p>
+<h3>Task lists</h3>
+<pre><code class="language-markdown">- [x] Task 1
+- [ ] Task 2
+- [ ] Task 3
+</code></pre>
+<p>Result:</p>
+<ul>
+<li>[x] Task 1</li>
+<li>[ ] Task 2</li>
+<li>[ ] Task 3</li>
+</ul>
+<h3>Collapsible content (spoilers)</h3>
+<p>&lt;details&gt;&lt;summaryClick me to expand&lt;/summary&gt;</p>
+<p>Content between &lt;details&gt; and &lt;/details&gt; is hidden. You need to <a href="https://www.freeformatter.com/html-escape.html">escape HTML</a> tags them.</p>
+<pre><code class="language-python">print(&quot;hello world!&quot;)
+</code></pre>
+<p>&lt;/details&gt;</p>
+<p>&lt;a name=&quot;headers&quot;/&gt;</p>
+<h2>Headers</h2>
+<pre><code class="language-no-highlight"># H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+Alternatively, for H1 and H2, an underline-ish style:
+
+Alt-H1
+======
+
+Alt-H2
+------
+</code></pre>
+<h1>H1</h1>
+<h2>H2</h2>
+<h3>H3</h3>
+<h4>H4</h4>
+<h5>H5</h5>
+<h6>H6</h6>
+<p>Alternatively, for H1 and H2, an underline-ish style:</p>
+<h1>Alt-H1</h1>
+<h2>Alt-H2</h2>
+<p>&lt;a name=&quot;emphasis&quot;/&gt;</p>
+<h2>Emphasis</h2>
+<pre><code class="language-no-highlight">Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+</code></pre>
+<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+<p>Strikethrough uses two tildes. <s>Scratch this.</s></p>
+<p>&lt;a name=&quot;lists&quot;/&gt;</p>
+<h2>Lists</h2>
+<pre><code class="language-no-highlight">1. First ordered list item
+2. Another item
+  * Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+  1. Ordered sub-list
+4. And another item.  
+   
+   Some text that should be aligned with the above item.
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+</code></pre>
+<ol>
+<li>First ordered list item</li>
+<li>Another item</li>
+</ol>
+<ul>
+<li>Unordered sub-list.</li>
+</ul>
+<ol>
+<li>
+<p>Actual numbers don't matter, just that it's a number</p>
+</li>
+<li>
+<p>Ordered sub-list</p>
+</li>
+<li>
+<p>And another item.</p>
+<p>Some text that should be aligned with the above item.</p>
+</li>
+</ol>
+<ul>
+<li>Unordered list can use asterisks</li>
+</ul>
+<ul>
+<li>Or minuses</li>
+</ul>
+<ul>
+<li>Or pluses</li>
+</ul>
+<p>&lt;a name=&quot;links&quot;/&gt;</p>
+<h2>Links</h2>
+<p>There are two ways to create links.</p>
+<pre><code class="language-no-highlight">[I'm an inline-style link](https://www.google.com)
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself]
+
+URLs and URLs in angle brackets will automatically get turned into links. 
+http://www.example.com or &lt;http://www.example.com&gt; and sometimes 
+example.com (but not on Github, for example).
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+</code></pre>
+<p><a href="https://www.google.com">I'm an inline-style link</a></p>
+<p><a href="https://www.mozilla.org">I'm a reference-style link</a></p>
+<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
+<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a></p>
+<p>URLs and URLs in angle brackets will automatically get turned into links.
+http://www.example.com or <a href="http://www.example.com">http://www.example.com</a> and sometimes
+example.com (but not on Github, for example).</p>
+<p>Some text to show that the reference links can follow later.</p>
+<p>&lt;a name=&quot;images&quot;/&gt;</p>
+<h2>Images</h2>
+<pre><code class="language-no-highlight">Here's our logo (hover to see the title text):
+
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 1&quot;)
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 2&quot;
+</code></pre>
+<p>Here's our logo (hover to see the title text):</p>
+<p>Inline-style:
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1"></p>
+<p>Reference-style:
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2"></p>
+<p>&lt;a name=&quot;code&quot;/&gt;</p>
+<h2>Code and Syntax Highlighting</h2>
+<p>Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and <em>Markdown Here</em> -- support syntax highlighting. <em>Markdown Here</em> supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the <a href="http://softwaremaniacs.org/media/soft/highlight/test.html">highlight.js demo page</a>.</p>
+<pre><code class="language-no-highlight">Inline `code` has `back-ticks around` it.
+</code></pre>
+<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+<p>Blocks of code are either fenced by lines with three back-ticks &lt;code&gt;```&lt;/code&gt;, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.</p>
+<p>&lt;pre lang=&quot;no-highlight&quot;&gt;&lt;code&gt;```javascript
+var s = &quot;JavaScript syntax highlighting&quot;;
+alert(s);</p>
+<pre><code> 
+```python
+s = &quot;Python syntax highlighting&quot;
+print s
+</code></pre>
+<pre><code>No language indicated, so no syntax highlighting. 
+But let's throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.
+</code></pre>
+<p>&lt;/code&gt;&lt;/pre&gt;</p>
+<pre><code class="language-javascript">var s = &quot;JavaScript syntax highlighting&quot;;
+alert(s);
+</code></pre>
+<pre><code class="language-python">s = &quot;Python syntax highlighting&quot;
+print s
+</code></pre>
+<pre><code>No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
+But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
+</code></pre>
+<p>Again, to see what languages are available for highlighting, and how to write those language names, see the <a href="http://softwaremaniacs.org/media/soft/highlight/test.html">highlight.js demo page</a>.</p>
+<p>&lt;a name=&quot;tables&quot;/&gt;</p>
+<h2>Tables</h2>
+<p>Tables aren't part of the core Markdown spec, but they are part of GFM and <em>Markdown Here</em> supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.</p>
+<pre><code class="language-no-highlight">Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+</code></pre>
+<p>Colons can be used to align columns.</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<p>The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Less</th>
+<th>Pretty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Still</em></td>
+<td><code>renders</code></td>
+<td><strong>nicely</strong></td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>&lt;a name=&quot;blockquotes&quot;/&gt;</p>
+<h2>Blockquotes</h2>
+<pre><code class="language-no-highlight">&gt; Blockquotes are very handy in email to emulate reply text.
+&gt; This line is part of the same quote.
+
+Quote break.
+
+&gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+</code></pre>
+<blockquote>
+<p>Blockquotes are very handy in email to emulate reply text.
+This line is part of the same quote.</p>
+</blockquote>
+<p>Quote break.</p>
+<blockquote>
+<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
+</blockquote>
+<p>&lt;a name=&quot;html&quot;/&gt;</p>
+<h2>Inline HTML</h2>
+<p>You can also use raw HTML in your Markdown, and it'll mostly work pretty well.</p>
+<pre><code class="language-no-highlight">&lt;dl&gt;
+  &lt;dt&gt;Definition list&lt;/dt&gt;
+  &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;
+
+  &lt;dt&gt;Markdown in HTML&lt;/dt&gt;
+  &lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+<p>&lt;dl&gt;
+&lt;dt&gt;Definition list&lt;/dt&gt;
+&lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;</p>
+<p>&lt;dt&gt;Markdown in HTML&lt;/dt&gt;
+&lt;dd&gt;Does <em>not</em> work <strong>very</strong> well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;
+&lt;/dl&gt;</p>
+<p>&lt;a name=&quot;hr&quot;/&gt;</p>
+<h2>Horizontal Rule</h2>
+<pre><code>Three or more...
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
+</code></pre>
+<p>Three or more...</p>
+<hr>
+<p>Hyphens</p>
+<hr>
+<p>Asterisks</p>
+<hr>
+<p>Underscores</p>
+<p>&lt;a name=&quot;lines&quot;/&gt;</p>
+<h2>Line Breaks</h2>
+<p>My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. &quot;Markdown Toggle&quot; is your friend.</p>
+<p>Here are some things to try out:</p>
+<pre><code>Here's a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+
+This line is also a separate paragraph, but...
+This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+</code></pre>
+<p>Here's a line for us to start with.</p>
+<p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
+<p>This line is also begins a separate paragraph, but...<br>
+This line is only separated by a single newline, so it's a separate line in the <em>same paragraph</em>.</p>
+<p>(Technical note: <em>Markdown Here</em> uses GFM line breaks, so there's no need to use MD's two-space line breaks.)</p>
+<p>&lt;a name=&quot;videos&quot;/&gt;</p>
+<h2>YouTube Videos</h2>
+<p>They can't be added directly but you can add an image with a link to the video like this:</p>
+<pre><code class="language-no-highlight">&lt;a href=&quot;http://www.youtube.com/watch?feature=player_embedded&amp;v=YOUTUBE_VIDEO_ID_HERE
+&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg&quot; 
+alt=&quot;IMAGE ALT TEXT HERE&quot; width=&quot;240&quot; height=&quot;180&quot; border=&quot;10&quot; /&gt;&lt;/a&gt;
+</code></pre>
+<p>Or, in pure Markdown, but losing the image sizing and border:</p>
+<pre><code class="language-no-highlight">[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+</code></pre>
+<p>&lt;a name=&quot;tex&quot;/&gt;</p>
+<h2>TeX Mathematical Formulae</h2>
+<p>A full description of TeX math symbols is beyond the scope of this cheatsheet. Here's a <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">good reference</a>, and you can try stuff out on <a href="https://www.codecogs.com/latex/eqneditor.php">CodeCogs</a>. You can also play with formulae in the Markdown Here options page.</p>
+<p>Here are some examples to try out:</p>
+<pre><code>$-b \pm \sqrt{b^2 - 4ac} \over 2a$
+$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}$
+$\forall x \in X, \quad \exists y \leq \epsilon$
+</code></pre>
+<p>The beginning and ending dollar signs (<code>$</code>) are the delimiters for the TeX markup.</p>
+</div><button>Go Back</button></div></div>
+    <script>window.__INITIAL_STATE__={"data":{"blog":{"title":"gist_markdown_examples.md","createdAt":"2019-12-25T08:52:14Z","description":"Gist markdown examples","address":"https:\u002F\u002Fgist.github.com\u002Fdfcb4406ebd92b4e0f558f81f2734dec","content":"\n# Gist markdown examples\n\nA collection of Markdown code and tricks that were tested to work in Gist.\n\nThis and all public gists in https:\u002F\u002Fgist.github.com\u002Fww9 are [Public Domain](https:\u002F\u002Fen.wikipedia.org\u002Fwiki\u002FPublic_domain_equivalent_license). Do whatever you want with it including , no need to credit me.\n\n### Todo\n\n- Reformat this whole document and assimilate these:\n  - https:\u002F\u002Fgist.github.com\u002Fjonschlinkert\u002F5854601\n  - https:\u002F\u002Fgist.github.com\u002Fringmatthew\u002F9f7bbfd102003963f9be7dbcf7d40e51\n  - https:\u002F\u002Fgist.github.com\u002FDavidWells\u002F7d2e0e1bc78f4ac59a123ddf8b74932d\n  - https:\u002F\u002Fgist.github.com\u002Fhaydenk\u002F958b433ee107537bb166b98b59262b2a\n  - https:\u002F\u002Fgist.github.com\u002Fasabaylus\u002F3071099\n  - https:\u002F\u002Fgist.github.com\u002Ft-nissie\u002F9580883 (Add images, secret gists, anti-spam protection)\n  - https:\u002F\u002Fguides.github.com\u002Ffeatures\u002Fmastering-markdown\u002F\n  - https:\u002F\u002Fgist.github.com\u002Fcyhsutw\u002Fd5983d166fb70ff651f027b2aa56ee4e#file-mathjax-ipynb (Python notebook, Math syntax)\n\n##### Table of Contents  \n[Headers](#headers)\n[Emphasis](#emphasis)\n[Lists](#lists)\n[Links](#links)\n[Images](#images)\n[Code and Syntax Highlighting](#code)\n[Tables](#tables)\n[Blockquotes](#blockquotes)\n[Inline HTML](#html)\n[Horizontal Rule](#hr)\n[Line Breaks](#lines)\n[YouTube Videos](#videos)\n[TeX Mathematical Formulae](#tex)\n\n\n\n### Task lists\n\n```markdown\n- [x] Task 1\n- [ ] Task 2\n- [ ] Task 3\n```\n\nResult:\n\n- [x] Task 1\n- [ ] Task 2\n- [ ] Task 3\n\n### Collapsible content (spoilers)\n\n\u003Cdetails\u003E\u003CsummaryClick me to expand\u003C\u002Fsummary\u003E\n\nContent between &lt;details&gt; and &lt;\u002Fdetails&gt; is hidden. You need to [escape HTML](https:\u002F\u002Fwww.freeformatter.com\u002Fhtml-escape.html) tags them.\n  \n```python\nprint(\"hello world!\")\n```\n\u003C\u002Fdetails\u003E\n\n\u003Ca name=\"headers\"\u002F\u003E\n\n## Headers\n\n```no-highlight\n# H1\n## H2\n### H3\n#### H4\n##### H5\n###### H6\n\nAlternatively, for H1 and H2, an underline-ish style:\n\nAlt-H1\n======\n\nAlt-H2\n------\n```\n\n# H1\n## H2\n### H3\n#### H4\n##### H5\n###### H6\n\nAlternatively, for H1 and H2, an underline-ish style:\n\nAlt-H1\n======\n\nAlt-H2\n------\n\n\u003Ca name=\"emphasis\"\u002F\u003E\n\n## Emphasis\n\n```no-highlight\nEmphasis, aka italics, with *asterisks* or _underscores_.\n\nStrong emphasis, aka bold, with **asterisks** or __underscores__.\n\nCombined emphasis with **asterisks and _underscores_**.\n\nStrikethrough uses two tildes. ~~Scratch this.~~\n```\n\nEmphasis, aka italics, with *asterisks* or _underscores_.\n\nStrong emphasis, aka bold, with **asterisks** or __underscores__.\n\nCombined emphasis with **asterisks and _underscores_**.\n\nStrikethrough uses two tildes. ~~Scratch this.~~\n\n\n\u003Ca name=\"lists\"\u002F\u003E\n\n## Lists\n\n```no-highlight\n1. First ordered list item\n2. Another item\n  * Unordered sub-list. \n1. Actual numbers don't matter, just that it's a number\n  1. Ordered sub-list\n4. And another item.  \n   \n   Some text that should be aligned with the above item.\n\n* Unordered list can use asterisks\n- Or minuses\n+ Or pluses\n```\n\n1. First ordered list item\n2. Another item\n  * Unordered sub-list. \n1. Actual numbers don't matter, just that it's a number\n  1. Ordered sub-list\n4. And another item.  \n   \n   Some text that should be aligned with the above item.\n\n* Unordered list can use asterisks\n- Or minuses\n+ Or pluses\n\n\u003Ca name=\"links\"\u002F\u003E\n\n## Links\n\nThere are two ways to create links.\n\n```no-highlight\n[I'm an inline-style link](https:\u002F\u002Fwww.google.com)\n\n[I'm a reference-style link][Arbitrary case-insensitive reference text]\n\n[You can use numbers for reference-style link definitions][1]\n\nOr leave it empty and use the [link text itself]\n\nURLs and URLs in angle brackets will automatically get turned into links. \nhttp:\u002F\u002Fwww.example.com or \u003Chttp:\u002F\u002Fwww.example.com\u003E and sometimes \nexample.com (but not on Github, for example).\n\nSome text to show that the reference links can follow later.\n\n[arbitrary case-insensitive reference text]: https:\u002F\u002Fwww.mozilla.org\n[1]: http:\u002F\u002Fslashdot.org\n[link text itself]: http:\u002F\u002Fwww.reddit.com\n```\n\n[I'm an inline-style link](https:\u002F\u002Fwww.google.com)\n\n[I'm a reference-style link][Arbitrary case-insensitive reference text]\n\n[You can use numbers for reference-style link definitions][1]\n\nOr leave it empty and use the [link text itself]\n\nURLs and URLs in angle brackets will automatically get turned into links. \nhttp:\u002F\u002Fwww.example.com or \u003Chttp:\u002F\u002Fwww.example.com\u003E and sometimes \nexample.com (but not on Github, for example).\n\nSome text to show that the reference links can follow later.\n\n[arbitrary case-insensitive reference text]: https:\u002F\u002Fwww.mozilla.org\n[1]: http:\u002F\u002Fslashdot.org\n[link text itself]: http:\u002F\u002Fwww.reddit.com\n\n\u003Ca name=\"images\"\u002F\u003E\n\n## Images\n\n```no-highlight\nHere's our logo (hover to see the title text):\n\nInline-style: \n![alt text](https:\u002F\u002Fgithub.com\u002Fadam-p\u002Fmarkdown-here\u002Fraw\u002Fmaster\u002Fsrc\u002Fcommon\u002Fimages\u002Ficon48.png \"Logo Title Text 1\")\n\nReference-style: \n![alt text][logo]\n\n[logo]: https:\u002F\u002Fgithub.com\u002Fadam-p\u002Fmarkdown-here\u002Fraw\u002Fmaster\u002Fsrc\u002Fcommon\u002Fimages\u002Ficon48.png \"Logo Title Text 2\"\n```\n\nHere's our logo (hover to see the title text):\n\nInline-style: \n![alt text](https:\u002F\u002Fgithub.com\u002Fadam-p\u002Fmarkdown-here\u002Fraw\u002Fmaster\u002Fsrc\u002Fcommon\u002Fimages\u002Ficon48.png \"Logo Title Text 1\")\n\nReference-style: \n![alt text][logo]\n\n[logo]: https:\u002F\u002Fgithub.com\u002Fadam-p\u002Fmarkdown-here\u002Fraw\u002Fmaster\u002Fsrc\u002Fcommon\u002Fimages\u002Ficon48.png \"Logo Title Text 2\"\n\n\u003Ca name=\"code\"\u002F\u003E\n\n## Code and Syntax Highlighting\n\nCode blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http:\u002F\u002Fsoftwaremaniacs.org\u002Fmedia\u002Fsoft\u002Fhighlight\u002Ftest.html).\n\n```no-highlight\nInline `code` has `back-ticks around` it.\n```\n\nInline `code` has `back-ticks around` it.\n\nBlocks of code are either fenced by lines with three back-ticks \u003Ccode\u003E```\u003C\u002Fcode\u003E, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.\n\n\u003Cpre lang=\"no-highlight\"\u003E\u003Ccode\u003E```javascript\nvar s = \"JavaScript syntax highlighting\";\nalert(s);\n```\n \n```python\ns = \"Python syntax highlighting\"\nprint s\n```\n \n```\nNo language indicated, so no syntax highlighting. \nBut let's throw in a &lt;b&gt;tag&lt;\u002Fb&gt;.\n```\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\n\n\n\n```javascript\nvar s = \"JavaScript syntax highlighting\";\nalert(s);\n```\n\n```python\ns = \"Python syntax highlighting\"\nprint s\n```\n\n```\nNo language indicated, so no syntax highlighting in Markdown Here (varies on Github). \nBut let's throw in a \u003Cb\u003Etag\u003C\u002Fb\u003E.\n```\n\nAgain, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http:\u002F\u002Fsoftwaremaniacs.org\u002Fmedia\u002Fsoft\u002Fhighlight\u002Ftest.html).\n\n\u003Ca name=\"tables\"\u002F\u003E\n\n## Tables\n\nTables aren't part of the core Markdown spec, but they are part of GFM and *Markdown Here* supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.\n\n```no-highlight\nColons can be used to align columns.\n\n| Tables        | Are           | Cool  |\n| ------------- |:-------------:| -----:|\n| col 3 is      | right-aligned | $1600 |\n| col 2 is      | centered      |   $12 |\n| zebra stripes | are neat      |    $1 |\n\nThe outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.\n\nMarkdown | Less | Pretty\n--- | --- | ---\n*Still* | `renders` | **nicely**\n1 | 2 | 3\n```\n\nColons can be used to align columns.\n\n| Tables        | Are           | Cool |\n| ------------- |:-------------:| -----:|\n| col 3 is      | right-aligned | $1600 |\n| col 2 is      | centered      |   $12 |\n| zebra stripes | are neat      |    $1 |\n\nThe outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.\n\nMarkdown | Less | Pretty\n--- | --- | ---\n*Still* | `renders` | **nicely**\n1 | 2 | 3\n\n\u003Ca name=\"blockquotes\"\u002F\u003E\n\n## Blockquotes\n\n```no-highlight\n\u003E Blockquotes are very handy in email to emulate reply text.\n\u003E This line is part of the same quote.\n\nQuote break.\n\n\u003E This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. \n```\n\n\u003E Blockquotes are very handy in email to emulate reply text.\n\u003E This line is part of the same quote.\n\nQuote break.\n\n\u003E This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. \n\n\u003Ca name=\"html\"\u002F\u003E\n\n## Inline HTML\n\nYou can also use raw HTML in your Markdown, and it'll mostly work pretty well. \n\n```no-highlight\n\u003Cdl\u003E\n  \u003Cdt\u003EDefinition list\u003C\u002Fdt\u003E\n  \u003Cdd\u003EIs something people use sometimes.\u003C\u002Fdd\u003E\n\n  \u003Cdt\u003EMarkdown in HTML\u003C\u002Fdt\u003E\n  \u003Cdd\u003EDoes *not* work **very** well. Use HTML \u003Cem\u003Etags\u003C\u002Fem\u003E.\u003C\u002Fdd\u003E\n\u003C\u002Fdl\u003E\n```\n\n\u003Cdl\u003E\n  \u003Cdt\u003EDefinition list\u003C\u002Fdt\u003E\n  \u003Cdd\u003EIs something people use sometimes.\u003C\u002Fdd\u003E\n\n  \u003Cdt\u003EMarkdown in HTML\u003C\u002Fdt\u003E\n  \u003Cdd\u003EDoes *not* work **very** well. Use HTML \u003Cem\u003Etags\u003C\u002Fem\u003E.\u003C\u002Fdd\u003E\n\u003C\u002Fdl\u003E\n\n\u003Ca name=\"hr\"\u002F\u003E\n\n## Horizontal Rule\n\n```\nThree or more...\n\n---\n\nHyphens\n\n***\n\nAsterisks\n\n___\n\nUnderscores\n```\n\nThree or more...\n\n---\n\nHyphens\n\n***\n\nAsterisks\n\n___\n\nUnderscores\n\n\u003Ca name=\"lines\"\u002F\u003E\n\n## Line Breaks\n\nMy basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. \"Markdown Toggle\" is your friend. \n\nHere are some things to try out:\n\n```\nHere's a line for us to start with.\n\nThis line is separated from the one above by two newlines, so it will be a *separate paragraph*.\n\nThis line is also a separate paragraph, but...\nThis line is only separated by a single newline, so it's a separate line in the *same paragraph*.\n```\n\nHere's a line for us to start with.\n\nThis line is separated from the one above by two newlines, so it will be a *separate paragraph*.\n\nThis line is also begins a separate paragraph, but...  \nThis line is only separated by a single newline, so it's a separate line in the *same paragraph*.\n\n(Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)\n\n\u003Ca name=\"videos\"\u002F\u003E\n\n## YouTube Videos\n\nThey can't be added directly but you can add an image with a link to the video like this:\n\n```no-highlight\n\u003Ca href=\"http:\u002F\u002Fwww.youtube.com\u002Fwatch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE\n\" target=\"_blank\"\u003E\u003Cimg src=\"http:\u002F\u002Fimg.youtube.com\u002Fvi\u002FYOUTUBE_VIDEO_ID_HERE\u002F0.jpg\" \nalt=\"IMAGE ALT TEXT HERE\" width=\"240\" height=\"180\" border=\"10\" \u002F\u003E\u003C\u002Fa\u003E\n```\n\nOr, in pure Markdown, but losing the image sizing and border:\n\n```no-highlight\n[![IMAGE ALT TEXT HERE](http:\u002F\u002Fimg.youtube.com\u002Fvi\u002FYOUTUBE_VIDEO_ID_HERE\u002F0.jpg)](http:\u002F\u002Fwww.youtube.com\u002Fwatch?v=YOUTUBE_VIDEO_ID_HERE)\n```\n\n\u003Ca name=\"tex\"\u002F\u003E\n\n## TeX Mathematical Formulae\n\nA full description of TeX math symbols is beyond the scope of this cheatsheet. Here's a [good reference](https:\u002F\u002Fen.wikibooks.org\u002Fwiki\u002FLaTeX\u002FMathematics), and you can try stuff out on [CodeCogs](https:\u002F\u002Fwww.codecogs.com\u002Flatex\u002Feqneditor.php). You can also play with formulae in the Markdown Here options page.\n\nHere are some examples to try out:\n\n```\n$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$\n$x = a_0 + \\frac{1}{a_1 + \\frac{1}{a_2 + \\frac{1}{a_3 + a_4}}}$\n$\\forall x \\in X, \\quad \\exists y \\leq \\epsilon$\n```\n\nThe beginning and ending dollar signs (`$`) are the delimiters for the TeX markup."}},"context":{}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/gridblog/assets/js/app.883dac62.js" defer></script><script src="/gridblog/assets/js/page--src--templates--blog-vue.9cd07c6b.js" defer></script>
+  </body>
+</html>

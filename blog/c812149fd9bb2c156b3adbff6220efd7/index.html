@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head>
+    <title>local_to_github.md - GridBlog</title><meta name="gridsome:hash" content="ef5a31b6d4f2ef30b559c2fd01d93591a31d3391"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.23"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/gridblog/assets/static/favicon.ce0531f.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/gridblog/assets/static/favicon.ac8d93a.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="96x96" href="/gridblog/assets/static/favicon.b9532cc.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/gridblog/assets/static/favicon.f22e9f3.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/gridblog/assets/static/favicon.62d22cb.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/gridblog/assets/static/favicon.1539b60.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/gridblog/assets/static/favicon.dc0cdc5.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/gridblog/assets/static/favicon.7b22250.9bb7ffafafc09ac851d81afb65b8ef59.png"><link rel="preload" href="/gridblog/assets/css/0.styles.298cab45.css" as="style"><link rel="preload" href="/gridblog/assets/js/app.883dac62.js" as="script"><link rel="preload" href="/gridblog/assets/js/page--src--templates--blog-vue.9cd07c6b.js" as="script"><link rel="prefetch" href="/gridblog/assets/js/page--node-modules--gridsome-0-7-23-gridsome--app--pages--404-vue.ef77c877.js"><link rel="prefetch" href="/gridblog/assets/js/page--src--pages--about-vue.6d4736fa.js"><link rel="prefetch" href="/gridblog/assets/js/page--src--pages--blogs-vue.5707b741.js"><link rel="prefetch" href="/gridblog/assets/js/page--src--pages--index-vue.340646fc.js"><link rel="prefetch" href="/gridblog/assets/js/page--src--pages--repos-vue.6198e4f7.js"><link rel="prefetch" href="/gridblog/assets/js/page--src--templates--repo-vue.4d44b054.js"><link rel="prefetch" href="/gridblog/assets/js/vendors~page--src--pages--index-vue~page--src--templates--blog-vue.a5781449.js"><link rel="stylesheet" href="/gridblog/assets/css/0.styles.298cab45.css"><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript>
+  </head>
+  <body >
+    <div data-server-rendered="true" id="app" class="layout"><header class="header"><strong><a href="/gridblog/" class="active">GridBlog</a></strong><nav class="nav"><a href="/gridblog/" class="nav__link active">Home</a><a href="/gridblog/repos/" class="nav__link">Repos</a><a href="/gridblog/blogs/" class="nav__link">Blog</a><a href="/gridblog/about/" class="nav__link">About</a></nav></header><div><h1>local_to_github.md</h1><div><p>New to GitHub, still trying to figure out the mechanism and here're some notes re <em>how to connect local folder with a repo and vice versa</em>:</p>
+<h3>1. Create a repository</h3>
+<p>It is recommended to create a repository directly from GitHub.com by using the beautiful and minimal UI provided. So do that before anything else.</p>
+<h3>2. Open local terminal</h3>
+<p>Now, there are two ways to connect a local folder to a repo on the site:</p>
+<ul>
+<li>clone --&gt; copy &amp; paste locally --&gt; add --&gt; commit</li>
+<li>2.2 init --&gt; add --&gt; commit --&gt; git remote origin &lt;URL&gt; --&gt; pull --&gt; push</li>
+</ul>
+<h4>2.1 clone --&gt; copy &amp; paste locally --&gt; add --&gt; commit</h4>
+<pre><code># get the empty repository you just created to a local folder 
+# whose name is automatically set to be the same as your repo
+$ git clone &lt;URL&gt;
+
+# Here is when you copy and paste the stuff you want to upload to your repo
+
+# adding/staging the files before commit
+$ git add .
+
+# just to check if everything has been added
+$ git status
+
+# commit
+$ git commit -m 'comment goes here'
+
+# push
+$ git push origin master
+# or simply git push
+</code></pre>
+<p>Note: &lt;URL&gt; can be HTTP url or SSH, using SSH you need to set up SSH Key first, <a href="https://ld8.github.io/blog/SSH_Key_Set_Up/">just in case you don't know how</a>.</p>
+<p>You can also just use <code>$ git commit -a -m 'comment'</code> without having to <code>git add .</code> if you don't have completely new files in the folder.</p>
+<h4>2.2 init --&gt; add --&gt; commit --&gt; git remote origin URL --&gt; pull --&gt; push</h4>
+<p>This is slightly more difficult and sometimes doesn't work if you are not careful.</p>
+<pre><code># create a local folder which ideally should be the same as the repo name you just created
+$ mkdir &lt;REPONAME&gt;
+
+# Change Directory into this folder
+$ cd &lt;REPONAME&gt;
+
+# make it a git monitored folder, assuming you've already got [git installed](https://git-scm.com/downloads)
+$ git init
+
+# adding/staging the files before commit
+$ git add .
+
+# just to check if everything has been added
+$ git status
+
+# commit
+$ git commit -m 'comment goes here'
+
+# set the remote destination to which the local folder is expected to connect
+$ git remote origin &lt;URL&gt;
+
+# pull request: make sure no conflict with the remote repo, basically all of the files on the repo have to be local first, it is recommended to git pull before git push. In fact, it'll prompt error if you have any files in the repo only and not local
+$ git pull
+
+# push
+$ git push origin master
+</code></pre>
+<p>Note:</p>
+<ul>
+<li>&lt;URL&gt; can be HTTP url or SSH, using SSH you need to set up SSH Key first, <a href="https://ld8.github.io/blog/SSH_Key_Set_Up/">just in case you don't know how</a>.</li>
+<li>if you <code>git remote origin</code> set to a wrong url, you can use <code>git remote set-url &lt;URL&gt;</code> to reset it to the correct one</li>
+</ul>
+<h4>I would recommend the 2.1 to complete newcomers.</h4>
+</div><button>Go Back</button></div></div>
+    <script>window.__INITIAL_STATE__={"data":{"blog":{"title":"local_to_github.md","createdAt":"2019-12-25T05:07:15Z","description":"Easiest Way to connect a local folder to a repo","address":"https:\u002F\u002Fgist.github.com\u002Fc812149fd9bb2c156b3adbff6220efd7","content":"New to GitHub, still trying to figure out the mechanism and here're some notes re _how to connect local folder with a repo and vice versa_:\n\n### 1. Create a repository\nIt is recommended to create a repository directly from GitHub.com by using the beautiful and minimal UI provided. So do that before anything else.\n\n### 2. Open local terminal\nNow, there are two ways to connect a local folder to a repo on the site:\n* clone --\u003E copy & paste locally --\u003E add --\u003E commit\n* 2.2 init --\u003E add --\u003E commit --\u003E git remote origin \u003CURL\u003E --\u003E pull --\u003E push\n\n#### 2.1 clone --\u003E copy & paste locally --\u003E add --\u003E commit\n\n```\n# get the empty repository you just created to a local folder \n# whose name is automatically set to be the same as your repo\n$ git clone \u003CURL\u003E\n\n# Here is when you copy and paste the stuff you want to upload to your repo\n\n# adding\u002Fstaging the files before commit\n$ git add .\n\n# just to check if everything has been added\n$ git status\n\n# commit\n$ git commit -m 'comment goes here'\n\n# push\n$ git push origin master\n# or simply git push\n```\nNote: \u003CURL\u003E can be HTTP url or SSH, using SSH you need to set up SSH Key first, [just in case you don't know how](https:\u002F\u002Fld8.github.io\u002Fblog\u002FSSH_Key_Set_Up\u002F).\n\nYou can also just use `$ git commit -a -m 'comment'` without having to `git add .` if you don't have completely new files in the folder.\n  \n#### 2.2 init --\u003E add --\u003E commit --\u003E git remote origin URL --\u003E pull --\u003E push\nThis is slightly more difficult and sometimes doesn't work if you are not careful.\n```\n# create a local folder which ideally should be the same as the repo name you just created\n$ mkdir \u003CREPONAME\u003E\n\n# Change Directory into this folder\n$ cd \u003CREPONAME\u003E\n\n# make it a git monitored folder, assuming you've already got [git installed](https:\u002F\u002Fgit-scm.com\u002Fdownloads)\n$ git init\n\n# adding\u002Fstaging the files before commit\n$ git add .\n\n# just to check if everything has been added\n$ git status\n\n# commit\n$ git commit -m 'comment goes here'\n\n# set the remote destination to which the local folder is expected to connect\n$ git remote origin \u003CURL\u003E\n\n# pull request: make sure no conflict with the remote repo, basically all of the files on the repo have to be local first, it is recommended to git pull before git push. In fact, it'll prompt error if you have any files in the repo only and not local\n$ git pull\n\n# push\n$ git push origin master\n```\nNote: \n* \u003CURL\u003E can be HTTP url or SSH, using SSH you need to set up SSH Key first, [just in case you don't know how](https:\u002F\u002Fld8.github.io\u002Fblog\u002FSSH_Key_Set_Up\u002F).\n* if you `git remote origin` set to a wrong url, you can use `git remote set-url \u003CURL\u003E` to reset it to the correct one\n\n#### I would recommend the 2.1 to complete newcomers.\n"}},"context":{}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/gridblog/assets/js/app.883dac62.js" defer></script><script src="/gridblog/assets/js/page--src--templates--blog-vue.9cd07c6b.js" defer></script>
+  </body>
+</html>
